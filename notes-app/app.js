@@ -5,4 +5,4 @@ const notes = getNotes()
 console.log(notes)
 
 // Challenge: Use the chalk library in your project
-console.log(chalk.inverse.green.bold('Success!'));
+console.log(chalk.inverse.blue.bold('Success!'));
