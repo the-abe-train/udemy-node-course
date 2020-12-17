@@ -1,6 +1,8 @@
+const getNotes = require('./notes.js')
 const fs = require('fs')
 
-fs.writeFileSync('notes.txt', 'My name is Abe.')
+const notes = getNotes()
 
-// Challenge: Append a message to notes.txt
-fs.appendFileSync('notes.txt', '\nI am almost 25-years-old.')
+fs.writeFileSync('notes.txt', notes)
+
+console.log(notes)
